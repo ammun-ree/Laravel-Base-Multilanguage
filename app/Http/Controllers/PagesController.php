@@ -55,16 +55,7 @@ class PagesController extends Controller
     }
 
 
-    /**
-     * Get The Events Page
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function GetEventsPage()
-    {
-      $events =  Event::all();
-      return view('pages.events' , compact('events'));
-    }
+
 
     /**
      * Show the form for creating a new resource.
