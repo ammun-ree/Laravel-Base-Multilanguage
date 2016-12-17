@@ -27,11 +27,11 @@
          */
         Route::get('/', 'PagesController@GetHomePage');
         Route::get('/publications', 'PagesController@GetPubliationsPage');
-
+        Route::get('/events', 'PagesController@GetEventsPage');
         Route::get('/about', 'PagesController@GetAboutPage');
         Route::get('/contact', 'PagesController@GetContactPage');
 
-        
+
 
 
 

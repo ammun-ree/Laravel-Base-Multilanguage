@@ -3,8 +3,20 @@
 <head>
     @include('includes.head')
 </head>
-<body>
-<div class="container">
+<body class="
+
+  @if (LaravelLocalization::getCurrentLocale() === 'ar')
+    rtl
+    font-family-rtl
+  @else
+    ltr
+    font-family-ltr
+  @endif
+
+">
+
+@include('includes.languages')
+
   @include('includes.sidebar')
 
 
@@ -18,6 +30,5 @@
         @include('includes.footer')
     </footer>
 
-</div>
 </body>
 </html>

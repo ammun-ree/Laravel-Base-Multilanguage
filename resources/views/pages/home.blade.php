@@ -1,9 +1,13 @@
 @extends('layouts.default')
 @section('content')
 
-<h1>Psychologues Solidaires</h1>
-<h3>publications</h3>
+<h3>{{trans('pages.publications')}}</h3>
 @foreach ($publications as $publication)
 {{$publication->title}}
+{{$publication->text}}
+{{$publication->category->slug}}
+
+
 @endforeach
+
 @stop

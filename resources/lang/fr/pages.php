@@ -15,6 +15,9 @@ return [
 
     'about' => 'à propos',
     'contact' => 'contact',
+    'homepage' => 'Acceuil',
+    'publications' => 'publications',
+    'events' => 'evenements',
     'footer_copyright' => 'Copyright 2016 psychologues solidaires',
 
 

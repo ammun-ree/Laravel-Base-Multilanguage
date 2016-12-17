@@ -15,6 +15,9 @@ return [
 
     'about' => 'نفسانيون متضامون',
     'contact' => 'للإتصال بنا',
+    'homepage' => 'الرئيسية',
+    'publications' => 'إصدارات',
+    'events' => 'evenements',
     'footer_copyright' => 'كلّ الحقوق حفوضة ـ نفسانيون متضامنون',
 
 

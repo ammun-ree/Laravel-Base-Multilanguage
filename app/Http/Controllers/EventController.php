@@ -3,67 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Publication;
-use App\Organization;
 use App\Event;
-
-class PagesController extends Controller
+class EventController extends Controller
 {
     /**
-     * Get The Home Page
+     * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function GetHomePage()
+    public function index()
     {
-        $publications =  Publication::all();
-        return view('pages.home' , compact('publications'));
-    }
-
-
-    /**
-     * Get The About Page
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function GetAboutPage()
-    {
-        $organization =  Organization::firstOrFail();
-        return view('pages.about' , compact('organization'));
-    }
-
-    /**
-     * Get The Contact Page
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function GetContactPage()
-    {
-        $organization =  Organization::firstOrFail();
-        return view('pages.contact' , compact('organization'));
-    }
-
-    /**
-     * Get The Publications Page
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function GetPubliationsPage()
-    {
-      $publications =  Publication::all();
-      return view('pages.publications' , compact('publications'));
-    }
-
-
-    /**
-     * Get The Events Page
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function GetEventsPage()
-    {
-      $events =  Event::all();
-      return view('pages.events' , compact('events'));
+        //
     }
 
     /**
